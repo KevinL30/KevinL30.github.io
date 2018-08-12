@@ -1,0 +1,236 @@
+html {
+  height: 100%;
+}
+
+body {
+	background-image: url('images/dark_bg.jpg');
+	background-repeat: repeat;
+	display: flex;
+	flex-direction: column;
+	height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+}
+
+nav {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	text-align: center;
+	border-bottom: 3px solid #7AC959;
+}
+
+nav ul {
+	list-style: none;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0; 
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+nav li a {	
+	padding: 20px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 2rem;
+	color: #7AC959;
+	/*border-right: 1px solid #7AC959; */
+}
+
+/*#nav li:first-child a {
+	border-left: 1px solid #7AC959; 
+}*/
+
+nav li a:hover {
+	color: white;
+	background-color: #7AC959; 
+}
+
+#logo-container img {
+	display: block;
+	margin: 0 auto;
+   	width: 90%;
+   	max-height: 200px;
+}
+
+
+.slider {
+  box-shadow: 0px 4px 10px #9d9d9d;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 700px;
+  border-radius: 4px;
+}
+
+.slider ul {
+  width: 1000%;
+  height: auto;
+  position: relative;
+  list-style: none;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  -moz-animation:slide-animation 15s infinite;
+  -webkit-animation:slide-animation 15s infinite;
+}
+
+.slider ul:hover {
+  -moz-animation-play-state:paused;
+  -webkit-animation-play-state:paused;
+}
+
+.slider li {
+  width: 10%;
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+span {
+  position: relative;
+  height: 50px;
+  display: block;
+  font-size: 0.8em;
+  bottom: 0;
+  padding: 0.5px 20px 0px 20px;
+  margin-top: -50px;
+  overflow: hidden;
+  background-color:rgba(54,44,48,0.6);
+  color: #fcfcfc;
+  text-shadow: 0px 1px 1px #9d9d9d;
+  font-weight: normal;
+  border-radius: 4px;
+}
+
+@-webkit-keyframes slide-animation {
+  1% {left: 0%; opacity: 1;}
+  18% {left: 0%; opacity: 1}
+  19% {opacity: 0.2;}
+  20% {left: -100%; opacity: 1;}
+  58% {left: -100%; opacity: 1;}
+  59% {opacity: 0.2;}
+  60% {left: -200%; opacity: 1;}
+  98% {left: -200%; opacity: 1;}
+  99% {opacity: 0.5;}
+  100% {left: 0%;}
+}
+
+@-moz-keyframes slide-animation {
+  1% {left: 0%; opacity: 1;}
+  18% {left: 0%; opacity: 1}
+  19% {opacity: 0.2;}
+  20% {left: -100%; opacity: 1;}
+  58% {left: -100%; opacity: 1;}
+  59% {opacity: 0.2;}
+  60% {left: -200%; opacity: 1;}
+  98% {left: -200%; opacity: 1;}
+  99% {opacity: 0.5;}
+  100% {left: 0%;}
+}
+
+
+
+.column {
+    padding: 2px;	
+}
+
+.column h2 {
+	float: left;
+	font-size: 2vh;
+}
+
+
+.lowLeft {
+	width: 35%;
+}
+
+.lowRight {
+	width: 60%;
+}
+
+.lowRight img {
+	float: left;
+}
+
+.middle {
+	width: 50%;
+}
+.content {
+	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+	padding: 20px;
+}
+
+.music {
+	float: left;
+	margin-top: 20px;
+	max-height: 392px;
+}
+
+.ppv {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	margin-top: 20px;
+	float: left;
+}
+
+.ppv img {
+	max-width: 700px;
+}
+
+.ppv h1 {
+	font-size: 5em;
+	color: #D4AF37;
+	font-family: 'Black Ops One', cursive;
+
+}
+
+.ppv h4 {
+	color: #D4AF37;
+	font-family: 'Black Ops One', cursive;
+}
+
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+	float: left; 
+    text-align: center; 
+   /* width: 20%;*/ /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 10px 5px; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    /*font-size: 30px;*/ /* Increased font size */
+}
+
+.icon-bar a:hover, .active {
+    background-color: #7AC959; /* Add a hover color */
+}
+
+.footer {
+  	flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  	padding: 10px 40px;
+  	color: #7AC959;
+  	text-align: center;
+	border-top: 3px solid #7AC959;
+}
